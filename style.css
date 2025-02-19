@@ -1,0 +1,377 @@
+/* General Styles */
+/* Full-width Banner */
+header {
+    width: 100%; /* Full width of the viewport */
+    height: auto; /* Adjust height automatically */
+    text-align: center;
+    padding: 0;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ensure the banner image covers the section properly */
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Make sure the text inside the banner is well-positioned */
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h2 {
+    margin: 10px 0 0;
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    .header-content {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #fff5f5, #ffecec); /* Replacing blue with light pink */
+    color: #2c3e50;
+}
+
+nav {
+    background-color: #D7455D; /* Replacing black with new color */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Full-width Banner */
+header {
+    width: 100vw; /* Full width of the viewport */
+    height: auto; /* Adjust height automatically */
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+
+header h1 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h2 {
+    margin: 10px 0 0;
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+#countdown {
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #D7455D; /* Updated color */
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #F69F7B; /* Updated footer link color */
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #D7455D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#back-to-top:hover {
+    background-color: #F86860;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .events-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Events Page Specific Styles */
+.events-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #D7455D;
+}
+
+.events-main {
+    padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .events-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Main Header Styling */
+
+/* Timer Block Styling */
+
+
+#countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #D7455D;
+}
+
+/* Events Grid Adjustment */
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 30px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.event-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.event-card h4,
+.event-card p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.event-card h4 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #D7455D;
+}
+
+.event-card p {
+    margin: 0 0 10px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .event-title h2 {
+        font-size: 1.4rem;
+    }
+    
+    .events-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 20px;
+    }
+    
+    #countdown {
+        font-size: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .event-details {
+        padding: 1.5rem;
+    }
+
+    .event-details h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .timer-block {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-title h1 {
+        font-size: 2rem;
+    }
+    
+    .timer-block {
+        width: 90%;
+    }
+}
+
+/* Event Details */
+.event-details {
+    background: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.event-details h2 {
+    color: #D7455D;
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #F86860;
+    display: inline-block;
+}
+
+.event-details p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #34495e;
+}
+
+/* Updated Button */
+button {
+    background: #D7455D;
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 2rem auto 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #F86860;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .event-details {
+        padding: 1.5rem;
+    }
+
+    .event-details h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+footer {
+    background: linear-gradient(135deg, #ff8c00, #ffa500); /* Orange Gradient */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
